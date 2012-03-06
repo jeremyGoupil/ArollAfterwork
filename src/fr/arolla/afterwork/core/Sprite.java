@@ -3,6 +3,7 @@ package fr.arolla.afterwork.core;
 
 import android.graphics.*;
 import android.os.Bundle;
+import fr.arolla.afterwork.util.TypeSpriteEnum;
 
 import java.util.Vector;
 
@@ -26,7 +27,7 @@ public abstract class Sprite {
         map.putInt(String.format("%d-right", saved_id), spriteArea.right);
         map.putInt(String.format("%d-top", saved_id), spriteArea.top);
         map.putInt(String.format("%d-bottom", saved_id), spriteArea.bottom);
-        map.putInt(String.format("%d-type", saved_id), getTypeId());
+        map.putInt(String.format("%d-type", saved_id), getTypeId().ordinal());
     }
 
     public final int getSavedId() {
@@ -37,7 +38,7 @@ public abstract class Sprite {
         saved_id = -1;
     }
 
-    public abstract int getTypeId();
+    public abstract TypeSpriteEnum getTypeId();
 
     public void changeSpriteArea(Rect newArea) {
         spriteArea = newArea;
