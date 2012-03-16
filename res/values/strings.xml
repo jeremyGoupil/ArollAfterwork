@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ArollAfterwork</string>
+    <string name="arollaMapDesc">Arolla expertise map</string>
+    <string name="result">Votre techno préférée est : </string>
 </resources>

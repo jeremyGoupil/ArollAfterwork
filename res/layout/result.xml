@@ -4,12 +4,16 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <ImageView
-       		android:contentDescription="@string/arollaMapDesc"
+    <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/arollaMap"
-            android:src="@drawable/arolla_expertise_map"
+            android:id="@+id/result"
+            android:text="@string/result"
+            />
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selected"
             />
 </LinearLayout>
 
