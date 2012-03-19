@@ -30,7 +30,6 @@ public class FirstActivity extends Activity {
 
 		arollaMapView = (ImageView) findViewById(R.id.arollaMap);
 		arollaMapView.setOnTouchListener(new OnTouchListener() {
-			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				float x = event.getX();
 				float y = event.getY();
